@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-provider-dept-8003" />
+        <module name="cloud-config-server-3344" />
+        <module name="cloud-zuul-9527" />
+        <module name="cloud-eureka-7002" />
+        <module name="cloud-consumer-dept-hystrix-dashboard-9001" />
+        <module name="cloud-eureka-7003" />
+        <module name="cloud-consumer-dept-80" />
+        <module name="cloud-provider-dept-8001" />
+        <module name="cloud-consumer-dept-feign" />
+        <module name="cloud-provider-dept-hystrix-8001" />
+        <module name="cloud-provider-dept-8002" />
+        <module name="cloud-config-client-3355" />
+        <module name="cloud-api" />
+        <module name="cloud-eureka-7001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-consumer-order80" target="11" />
+      <module name="cloud-provider-payment8001" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-config-server-3344" options="" />
+    </option>
+  </component>
+</project>

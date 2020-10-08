@@ -1,0 +1,11 @@
+# 系统级别的配置
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:3344
+      name: config-client # 需要让server从git仓库中读取的文件名称
+      profile: dev
+      label: master
+
+# 动态获取server配置的端口号

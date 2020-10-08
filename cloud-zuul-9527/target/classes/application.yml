@@ -1,0 +1,27 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: springcloud-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: zuul-9527
+    prefer-ip-address: true
+
+
+
+info:
+  app.name: cloud2020
+  company.name: xxx
+
+# 替换路径中的微服务id
+zuul:
+  routes:
+    mydept.serviceId: springcloud-provider-dept
+    mydept.path: /yyy/**
+  ignored-services: springcloud-provider-dept  # 禁止使用微服务id路径访问
